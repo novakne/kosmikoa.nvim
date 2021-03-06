@@ -3,9 +3,11 @@
 <!--toc-->
 - [Kosmikoa](#kosmikoa)
     * [Screenshots](#screenshots)
+        * [C](#c)
+        * [Lua](#lua)
     * [Requirements](#requirements)
     * [Installation](#installation)
-    * [Customisation](#customisation)
+    * [Setup](#setup)
 
 <!-- tocstop -->
 
