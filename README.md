@@ -1,4 +1,4 @@
-<p align="center"><img src=".assets/kosmikoa.png?raw=true "kosmikoa""/></a></p>
+<p align="center"><img src=".assets/kosmikoa.jpg?raw=true "kosmikoa""/></a></p>
 
 <!--toc-->
 - [Kosmikoa](#kosmikoa)
@@ -19,7 +19,7 @@
 ## Requirements
 
 * Neovim > 0.5
-* [Polyglot](https://github.com/sheerun/vim-polyglot) __and / or__ [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) are not obligatory but really __recommended__
+* [Polyglot](https://github.com/sheerun/vim-polyglot) __and/or__ [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) are not obligatory but really __recommended__
 
 > Some language looks better with Treesitter on or off, try both
 
@@ -96,7 +96,12 @@ local colors = {
 
   -- [ Additional colors ]
   err       = '#ec5382',
-  good      = '#62e89e',
+
+  green00   = '#62e89e',
+  -- builtin
+  green01   = '#7fe792',
+  green02   = '#74dfb9',
+  green03   = '#2fe5b5',
 
   orange00  = '#f08c89',
   orange01  = '#f09895',
