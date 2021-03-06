@@ -1,4 +1,4 @@
-<p align="center"><img src=".previews/kosmikoa.png?raw=true "kosmikoa""/></a></p>
+<p align="center"><img src=".assets/kosmikoa.png?raw=true "kosmikoa""/></a></p>
 
 <!--toc-->
 - [Kosmikoa](#kosmikoa)
