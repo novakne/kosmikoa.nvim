@@ -15,11 +15,26 @@
 
 ## Screenshots
 
+### C
+
+**With Treesitter & Polyglot**
+<p align="center"><img src=".assets/c_treesitter?raw=true "c_treesitter""/></a></p>
+
+**With only Polyglot**
+<p align="center"><img src=".assets/c_polyglot?raw=true "c_polyglot""/></a></p>
+
+### Lua
+
+**With Treesitter & Polyglot**
+<p align="center"><img src=".assets/lua_treesitter?raw=true "lua_treesitter""/></a></p>
+
+**With only Polyglot**
+<p align="center"><img src=".assets/lua_polyglot?raw=true "lua_polyglot""/></a></p>
 
 ## Requirements
 
 * Neovim > 0.5
-* [Polyglot](https://github.com/sheerun/vim-polyglot) __and/or__ [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) are not obligatory but really __recommended__
+* [Polyglot](https://github.com/sheerun/vim-polyglot) __and/or__ [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) are not obligatory but really __recommended__ if you want full syntax highlighting support.
 
 > Some language looks better with Treesitter on or off, try both
 
@@ -37,8 +52,16 @@ With **packer.nvim**
 
 ```
 
+With **vim-plug**
+```
+Plug 'novakne/kosmikoa.nvim'
 
-## Customisation
+# Then in your init.vim
+lua require'kosmikoa.nvim'.setup()
+```
+
+
+## Setup
 
 > Every code below is written in `lua`
 

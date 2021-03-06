@@ -1,6 +1,6 @@
 -- Theme: Kosmikoa
 -- Author: Novakane
--- Repository:
+-- Repository: https://github.com/novakne/kosmikoa.nvim
 -- License: MIT
 
 
