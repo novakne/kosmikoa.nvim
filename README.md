@@ -18,18 +18,18 @@
 ### C
 
 **With Treesitter & Polyglot**
-<p align="center"><img src=".assets/c_treesitter?raw=true "c_treesitter""/></a></p>
+<p align="center"><img src=".assets/c_treesitter.png?raw=true "c_treesitter""/></a></p>
 
 **With only Polyglot**
-<p align="center"><img src=".assets/c_polyglot?raw=true "c_polyglot""/></a></p>
+<p align="center"><img src=".assets/c_polyglot.png?raw=true "c_polyglot""/></a></p>
 
 ### Lua
 
 **With Treesitter & Polyglot**
-<p align="center"><img src=".assets/lua_treesitter?raw=true "lua_treesitter""/></a></p>
+<p align="center"><img src=".assets/lua_treesitter.png?raw=true "lua_treesitter""/></a></p>
 
 **With only Polyglot**
-<p align="center"><img src=".assets/lua_polyglot?raw=true "lua_polyglot""/></a></p>
+<p align="center"><img src=".assets/lua_polyglot.png?raw=true "lua_polyglot""/></a></p>
 
 ## Requirements
 
