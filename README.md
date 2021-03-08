@@ -8,12 +8,9 @@
     * [Requirements](#requirements)
     * [Installation](#installation)
     * [Setup](#setup)
-<<<<<<< HEAD
-=======
     * [Support](#support)
         * [Languages](#languages)
         * [Plugins](#plugins)
->>>>>>> 4e43ea8 (README: add support section)
 
 <!-- tocstop -->
 
