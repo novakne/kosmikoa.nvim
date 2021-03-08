@@ -8,6 +8,12 @@
     * [Requirements](#requirements)
     * [Installation](#installation)
     * [Setup](#setup)
+<<<<<<< HEAD
+=======
+    * [Support](#support)
+        * [Languages](#languages)
+        * [Plugins](#plugins)
+>>>>>>> 4e43ea8 (README: add support section)
 
 <!-- tocstop -->
 
@@ -19,7 +25,7 @@
 
 ### C
 
-**With Treesitter & Polyglot**
+**With Tree-sitter & Polyglot**
 <p align="center"><img src=".assets/c_treesitter.png?raw=true "c_treesitter""/></a></p>
 
 **With only Polyglot**
@@ -27,7 +33,7 @@
 
 ### Lua
 
-**With Treesitter & Polyglot**
+**With Tree-sitter & Polyglot**
 <p align="center"><img src=".assets/lua_treesitter.png?raw=true "lua_treesitter""/></a></p>
 
 **With only Polyglot**
@@ -36,9 +42,9 @@
 ## Requirements
 
 * Neovim > 0.5
-* [Polyglot](https://github.com/sheerun/vim-polyglot) __and/or__ [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) are not obligatory but really __recommended__ if you want full syntax highlighting support.
+* [Polyglot](https://github.com/sheerun/vim-polyglot) __and/or__ [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter) are not obligatory but really __recommended__ if you want full syntax highlighting support.
 
-> Some language looks better with Treesitter on or off, try both
+> Some language looks different with Tree-sitter on or off, try both
 
 ## Installation
 
@@ -143,4 +149,48 @@ local colors = {
 
 }
 ```
+
+## Support
+
+### Languages
+
+* All maintained `Tree-sitter` parsers
+
+* c/c++
+* clojure
+* css
+* fennel
+* go
+* html5
+* javascript
+* json
+* jsx
+* less
+* log
+* lua
+* markdown
+* moonscript
+* nim
+* python
+* rust
+* scss
+* sh
+* toml
+* typescript
+* xml
+* yaml
+* zig
+
+### Plugins
+
+* [Gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+* [Hop](https://github.com/phaazon/hop.nvim)
+* [Lspsaga](https://github.com/glepnir/lspsaga.nvim)
+* [Signify](http//github.com/mhinz/vim-signify)
+* [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+* Tree-sitter Modules
+  * [Nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
+  * [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
+  * [Treesitter-playground](https://github.com/nvim-treesitter/playground)
+* [Which-key](https://github.com/liuchengxu/vim-which-key)
 
