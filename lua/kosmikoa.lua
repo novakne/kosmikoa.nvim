@@ -354,16 +354,24 @@ kosmikoa.set_syntax = function()
     -- [ Javascript ]
     -- ( http//github.com/pangloss/vim-javascript )
     jsArrowFunction = {fg = colors.yellow00},
+    jsDestructuringBlock = {fg = colors.magenta01},
     jsFuncArgs = {fg = colors.yellow06, attr = 'italic'},
     jsFuncCall = {fg = colors.yellow02},
     jsObjectColon = {fg = colors.blue03},
-    jsObjectKey = {fg = colors.blue01},
+    jsObjectKey = {fg = colors.blue02},
     jsObjectProp = {fg = colors.cyan00},
+    jsTemplateExpression = {fg = colors.magenta02},
+    jsThis = {fg = colors.green00},
     jsVariableDef = {fg = colors.base07, attr = 'italic'},
 
     -- [ Json ]
     jsonBraces = {fg = colors.magenta00},
     jsonNull = {fg = colors.pink00},
+
+    -- [ Jsx ]
+    jsxClosePunct = {fg = colors.blue04},
+    jsxOpenPunct = {fg = colors.blue00},
+    jsxTagName = {fg = colors.blue00},
 
     -- [ Less ]
     --  ( http//github.com/groenewege/vim-less )
