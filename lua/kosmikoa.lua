@@ -483,6 +483,7 @@ kosmikoa.set_syntax = function()
     zigExecution = {fg = colors.magenta02},
     zigKeyword = {fg = colors.yellow00},
     zigVarDecl = {fg = colors.pink00},
+    zigMultilineStringDelimiter = {fg = colors.blue06},
 
     -- [ Zsh ]
     zshDelimiter = {fg = colors.magenta02},
