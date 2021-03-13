@@ -6,8 +6,9 @@
         * [C](#c)
         * [Lua](#lua)
     * [Requirements](#requirements)
-    * [Installation](#installation)
-    * [Setup](#setup)
+    * [Install](#install)
+    * [Usage](#usage)
+    * [Config](#config)
     * [Support](#support)
         * [Languages](#languages)
         * [Plugins](#plugins)
@@ -43,12 +44,13 @@
 
 > Some language looks different with Tree-sitter on or off, try both
 
-## Installation
+## Install
 
-With **packer.nvim**
+e.g. **packer.nvim**
 ``` lua
   use {
     'novakne/kosmikoa.nvim',
+    branch = 'main',
     config = function()
       require'kosmikoa'.setup()
     end,
@@ -57,18 +59,22 @@ With **packer.nvim**
 
 ```
 
-With **vim-plug**
+e.g. **vim-plug**
 ```
 Plug 'novakne/kosmikoa.nvim'
-
-# Then in your init.vim
-lua require'kosmikoa.nvim'.setup()
 ```
 
+## Usage
 
-## Setup
+`lua require 'kosmikoa'.setup()`
 
-> Every code below is written in `lua`
+or
+
+`colorscheme kosmikoa`
+
+## Config
+
+> Code below is written in `lua`
 
 If you want to change a color you can use something like this:
 ``` lua
