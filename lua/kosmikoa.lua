@@ -73,24 +73,24 @@ local colors = {
 
 
 -- [ Terminal ]
-local term_colors = {
-  terminal_color_0  = colors.base01,
-  terminal_color_1  = colors.pink00,
-  terminal_color_2  = colors.green00,
-  terminal_color_3  = colors.yellow00,
-  terminal_color_4  = colors.blue00,
-  terminal_color_5  = colors.magenta00,
-  terminal_color_6  = colors.cyan00,
-  terminal_color_7  = colors.base08,
-  terminal_color_8  = colors.base02,
-  terminal_color_9  = colors.pink00,
-  terminal_color_10 = colors.green00,
-  terminal_color_11 = colors.yellow00,
-  terminal_color_12 = colors.blue00,
-  terminal_color_13 = colors.magenta00,
-  terminal_color_14 = colors.cyan00,
-  terminal_color_15 = colors.base09,
-}
+kosmikoa.set_term_colors = function()
+  vim.g.terminal_color_0  = colors.base01
+  vim.g.terminal_color_1  = colors.pink00
+  vim.g.terminal_color_2  = colors.green00
+  vim.g.terminal_color_3  = colors.yellow00
+  vim.g.terminal_color_4  = colors.blue00
+  vim.g.terminal_color_5  = colors.magenta00
+  vim.g.terminal_color_6  = colors.cyan00
+  vim.g.terminal_color_7  = colors.base08
+  vim.g.terminal_color_8  = colors.base02
+  vim.g.terminal_color_9  = colors.pink00
+  vim.g.terminal_color_10 = colors.green00
+  vim.g.terminal_color_11 = colors.yellow00
+  vim.g.terminal_color_12 = colors.blue00
+  vim.g.terminal_color_13 = colors.magenta00
+  vim.g.terminal_color_14 = colors.cyan00
+  vim.g.terminal_color_15 = colors.base09
+end
 
 
 -- [ Highlighting function ]
@@ -102,7 +102,6 @@ local highlight = function(group, color)
   local cmd = ('highlight! %s %s %s %s %s'):format(group, guifg, guibg, attr, sp)
 
   vim.cmd(cmd)
-
 end
 
 
@@ -545,7 +544,7 @@ kosmikoa.set_syntax = function()
 
     -- [ Telescope ]
     -- ( https://github.com/nvim-telescope/telescope.nvim )
-    TelescopePreviewLine = {fg = colors.blue00},
+    TelescopePreviewLine = {bg = colors.base01},
     TelescopeSelection = {fg = colors.yellow00},
     TelescopeSelectionCaret = {fg = colors.pink00},
 
@@ -603,6 +602,21 @@ kosmikoa.set_syntax = function()
   return syntax
 end
 
+local async
+async = vim.loop.new_async(
+  vim.schedule_wrap(
+    function()
+      local syntax = kosmikoa:set_syntax()
+
+      for group, color in pairs(syntax) do
+        highlight(group, color)
+      end
+
+      kosmikoa:set_term_colors()
+      async:close()
+    end
+  )
+)
 
 kosmikoa.setup = function(opts)
   local user_colors = opts or {}
@@ -617,15 +631,17 @@ kosmikoa.setup = function(opts)
   vim.o.background = 'dark'
   vim.o.termguicolors = true
 
-  for color, value in pairs(term_colors) do
-    vim.g[color] = value
-  end
+  -- for color, value in pairs(term_colors) do
+  --   vim.g[color] = value
+  -- end
 
   local syntax = kosmikoa.set_syntax()
 
   for group, color in pairs(syntax) do
     highlight(group, color)
   end
+
+  async:send()
 
 end
 
