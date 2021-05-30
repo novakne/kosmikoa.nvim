@@ -144,41 +144,55 @@ local colors = {
 
 * All maintained `Tree-sitter` parsers
 
-* c/c++
-* clojure
-* css
-* fennel
-* go
-* html5
-* javascript
-* json
-* jsx
-* less
-* log
-* lua
-* markdown
-* moonscript
-* nim
-* python
-* rust
-* scss
-* sh
-* toml
-* typescript
-* xml
-* yaml
-* zig
+- c/c++
+- clojure
+- css
+- fennel
+- go
+- html5
+- javascript
+- json
+- jsx
+- less
+- log
+- lua
+- markdown
+- moonscript
+- nim
+- python
+- rust
+- scss
+- sh
+- toml
+- typescript
+- xml
+- yaml
+- zig
 
 ### Plugins
 
-* [Gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-* [Hop](https://github.com/phaazon/hop.nvim)
-* [Lspsaga](https://github.com/glepnir/lspsaga.nvim)
-* [Signify](http//github.com/mhinz/vim-signify)
-* [Telescope](https://github.com/nvim-telescope/telescope.nvim)
-* Tree-sitter Modules
+- [Gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [Hop](https://github.com/phaazon/hop.nvim)
+- [Lspsaga](https://github.com/glepnir/lspsaga.nvim)
+- [Signify](http//github.com/mhinz/vim-signify)
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+- Tree-sitter modules
   * [Nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
   * [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
   * [Treesitter-playground](https://github.com/nvim-treesitter/playground)
-* [Which-key](https://github.com/liuchengxu/vim-which-key)
+- [Which-key](https://github.com/liuchengxu/vim-which-key)
 
+### Contributing
+
+__SourceHut__
+
+Send patches using [git send-email](https://git-send-email.io) to my [public inbox](https://lists.sr.ht/~novakane/public-inbox)  
+`~novakane/public-inbox@lists.sr.ht` with project prefix set to `kosmikoa.nvim`:
+
+```
+git config format.subjectPrefix "PATCH kosmikoa.nvim"
+
+```
+
+### License
+MIT, [learn more](LICENSE.md)
