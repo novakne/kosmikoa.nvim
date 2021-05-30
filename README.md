@@ -1,19 +1,4 @@
-<p align="center"><img src=".assets/kosmikoa.jpg?raw=true "kosmikoa""/></a></p>
-
-<!--toc-->
-- [Kosmikoa](#kosmikoa)
-    * [Screenshots](#screenshots)
-        * [C](#c)
-        * [Lua](#lua)
-    * [Requirements](#requirements)
-    * [Install](#install)
-    * [Usage](#usage)
-    * [Config](#config)
-    * [Support](#support)
-        * [Languages](#languages)
-        * [Plugins](#plugins)
-
-<!-- tocstop -->
+<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/kosmikoa.jpg"kosmikoa""/></a></p>
 
 # Kosmikoa
 
@@ -24,18 +9,18 @@
 ### C
 
 **With Tree-sitter & Polyglot**
-<p align="center"><img src=".assets/c_treesitter.png?raw=true "c_treesitter""/></a></p>
+<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/c_treesitter.png"c_treesitter""/></a></p>
 
 **With only Polyglot**
-<p align="center"><img src=".assets/c_polyglot.png?raw=true "c_polyglot""/></a></p>
+<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/c_polyglot.png"c_polyglot""/></a></p>
 
 ### Lua
 
 **With Tree-sitter & Polyglot**
-<p align="center"><img src=".assets/lua_treesitter.png?raw=true "lua_treesitter""/></a></p>
+<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/lua_treesitter.png"lua_treesitter""/></a></p>
 
 **With only Polyglot**
-<p align="center"><img src=".assets/lua_polyglot.png?raw=true "lua_polyglot""/></a></p>
+<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/lua_polyglot.png"lua_polyglot""/></a></p>
 
 ## Requirements
 
