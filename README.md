@@ -4,34 +4,21 @@
 
 > Colors scheme for Neovim
 
-## Screenshots
-
-### C
-
-**With Tree-sitter & Polyglot**
-<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/c_treesitter.png"c_treesitter""/></a></p>
-
-**With only Polyglot**
-<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/c_polyglot.png"c_polyglot""/></a></p>
-
-### Lua
-
-**With Tree-sitter & Polyglot**
-<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/lua_treesitter.png"lua_treesitter""/></a></p>
-
-**With only Polyglot**
-<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/lua_polyglot.png"lua_polyglot""/></a></p>
+<p align="center"><img src="https://git.sr.ht/~novakane/kosmikoa.nvim/blob/main/.assets/lua.png"lua""/></a></p>
 
 ## Requirements
 
-* Neovim > 0.5
-* [Polyglot](https://github.com/sheerun/vim-polyglot) __and/or__ [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter) are not obligatory but really __recommended__ if you want full syntax highlighting support.
+- Neovim > 0.5
+
+- Recommended
+    * [Polyglot](https://github.com/sheerun/vim-polyglot)
+    * [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 > Some language looks different with Tree-sitter on or off, try both
 
 ## Install
 
-e.g. **packer.nvim**
+e.g. [packer.nvim](https://github.com/wbthomason/packer.nvim)
 ``` lua
   use {
     'novakne/kosmikoa.nvim',
@@ -44,10 +31,9 @@ e.g. **packer.nvim**
 
 ```
 
-e.g. **vim-plug**
-```
-Plug 'novakne/kosmikoa.nvim'
-```
+e.g. [vim-plug](https://github.com/junegunn/vim-plug)
+
+`Plug 'novakne/kosmikoa.nvim'`
 
 ## Usage
 
@@ -63,16 +49,19 @@ or
 
 If you want to change a color you can use something like this:
 ``` lua
+
 require'kosmikoa'.setup {
   colors = {
     base00 = '#000000',
     blue03 = '#00ffff',
   }
 }
+
 ```
 
 Default colors:
 ``` lua
+
 local colors = {
 
   base00 = '#23222b',
@@ -182,17 +171,17 @@ local colors = {
   * [Treesitter-playground](https://github.com/nvim-treesitter/playground)
 - [Which-key](https://github.com/liuchengxu/vim-which-key)
 
-### Contributing
+# Contributing
 
 __SourceHut__
 
-Send patches using [git send-email](https://git-send-email.io) to my [public inbox](https://lists.sr.ht/~novakane/public-inbox)  
+Send patches or questions using [git send-email](https://git-send-email.io) to my [public inbox](https://lists.sr.ht/~novakane/public-inbox)  
 `~novakane/public-inbox@lists.sr.ht` with project prefix set to `kosmikoa.nvim`:
 
 ```
 git config format.subjectPrefix "PATCH kosmikoa.nvim"
-
 ```
+Or just use github interface
 
-### License
-MIT, [learn more](LICENSE.md)
+# License
+**[MIT](LICENSE)**
