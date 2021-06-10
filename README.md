@@ -8,18 +8,19 @@
 
 ## Requirements
 
-- Neovim > 0.5
+-   Neovim > 0.5
 
-- Recommended
-    * [Polyglot](https://github.com/sheerun/vim-polyglot)
-    * [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
+-   Recommended
+    -   [Polyglot](https://github.com/sheerun/vim-polyglot)
+    -   [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 > Some language looks different with Tree-sitter on or off, try both
 
 ## Install
 
 e.g. [packer.nvim](https://github.com/wbthomason/packer.nvim)
-``` lua
+
+```lua
 use {
     'https://git.sr.ht/~novakne/kosmikoa.nvim',
     branch = 'main',
@@ -48,7 +49,8 @@ or
 > Code below is written in `lua`
 
 If you want to change a color you can use something like this:
-``` lua
+
+```lua
 
 require'kosmikoa'.setup {
     colors = {
@@ -60,7 +62,8 @@ require'kosmikoa'.setup {
 ```
 
 Default colors:
-``` lua
+
+```lua
 
 local colors = {
     base00 = '#23222b',
@@ -125,45 +128,45 @@ local colors = {
 
 ### Languages
 
-* All maintained `Tree-sitter` parsers
+-   All maintained `Tree-sitter` parsers
 
-- c/c++
-- clojure
-- css
-- fennel
-- go
-- html5
-- javascript
-- json
-- jsx
-- less
-- log
-- lua
-- markdown
-- moonscript
-- nim
-- python
-- rust
-- scss
-- sh
-- toml
-- typescript
-- xml
-- yaml
-- zig
+*   c/c++
+*   clojure
+*   css
+*   fennel
+*   go
+*   html5
+*   javascript
+*   json
+*   jsx
+*   less
+*   log
+*   lua
+*   markdown
+*   moonscript
+*   nim
+*   python
+*   rust
+*   scss
+*   sh
+*   toml
+*   typescript
+*   xml
+*   yaml
+*   zig
 
 ### Plugins
 
-- [Gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [Hop](https://github.com/phaazon/hop.nvim)
-- [Lspsaga](https://github.com/glepnir/lspsaga.nvim)
-- [Signify](http//github.com/mhinz/vim-signify)
-- [Telescope](https://github.com/nvim-telescope/telescope.nvim)
-- Tree-sitter modules
-  * [Nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
-  * [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
-  * [Treesitter-playground](https://github.com/nvim-treesitter/playground)
-- [Which-key](https://github.com/liuchengxu/vim-which-key)
+-   [Gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+-   [Hop](https://github.com/phaazon/hop.nvim)
+-   [Lspsaga](https://github.com/glepnir/lspsaga.nvim)
+-   [Signify](http//github.com/mhinz/vim-signify)
+-   [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+-   Tree-sitter modules
+    -   [Nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
+    -   [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
+    -   [Treesitter-playground](https://github.com/nvim-treesitter/playground)
+-   [Which-key](https://github.com/liuchengxu/vim-which-key)
 
 # Contributing
 
@@ -178,4 +181,5 @@ git config format.subjectPrefix "PATCH kosmikoa.nvim"
 Or if you're on Github use Github interface
 
 # License
+
 **[MIT](LICENSE)**
