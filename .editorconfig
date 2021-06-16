@@ -2,11 +2,17 @@
 root = true
 
 [*]
-indent_style = space
-indent_size = 4
-tab_width = 4
+tab_width = 8
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = true
+
+[*.lua]
+indent_style = space
+indent_size = 4
+
+[*.vim]
+indent_style = space
+indent_size = 2
 
