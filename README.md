@@ -22,7 +22,7 @@ e.g. [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
 use {
-    'https://git.sr.ht/~novakne/kosmikoa.nvim',
+    'https://git.sr.ht/~novakane/kosmikoa.nvim',
     branch = 'main',
     config = function()
         require'kosmikoa'.setup()
@@ -34,7 +34,7 @@ use {
 
 e.g. [vim-plug](https://github.com/junegunn/vim-plug)
 
-`Plug 'novakne/kosmikoa.nvim'`
+`Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'`
 
 ## Usage
 
