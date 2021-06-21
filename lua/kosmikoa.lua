@@ -215,13 +215,9 @@ kosmikoa.set_syntax = function()
         DiffDelete = { fg = colors.err, bg = colors.base00, attr = 'inverse' },
         DiffText = { fg = colors.blue00, bg = colors.base00, attr = 'inverse' },
         -- Legacy groups for official git.vim and diff.vim syntax
-        diffAdded = { fg = colors.green00, bg = colors.base00, attr = 'inverse' },
-        diffChanged = {
-            fg = colors.yellow00,
-            bg = colors.base00,
-            attr = 'inverse',
-        },
-        diffRemoved = { fg = colors.err, bg = colors.base00, attr = 'inverse' },
+        diffAdded = { fg = colors.base09, attr = 'bold' },
+        diffChanged = { fg = colors.yellow00 },
+        diffRemoved = { fg = colors.base06 },
 
         -- [ Quickfix / Location list ]
         qfLineNr = { fg = colors.blue00 },
@@ -384,6 +380,18 @@ kosmikoa.set_syntax = function()
         luaFuncCall = { fg = colors.yellow02 },
         luaSpecialValue = { fg = colors.yellow04 },
         luaBuiltIn = { fg = colors.green00 },
+
+        -- [ mail ]
+        mailHeader = { fg = colors.blue00 },
+        mailHeaderKey = { fg = colors.base09, attr = 'bold' },
+        mailHeaderEmail = { fg = colors.blue00, attr = 'underline' },
+        mailSubject = { fg = colors.base00, bg = colors.blue06 },
+        -- git sendmail
+        diffFile = { fg = colors.yellow00, attr = 'bold' },
+        diffIndexLine = { attr = 'italic' },
+        diffOldFile = { fg = colors.pink00 },
+        diffNewFile = { fg = colors.blue00 },
+        diffLine = { attr = 'bold' },
 
         -- [ Markdown ]
         -- ( http//github.com/plasticboy/vim-markdown )

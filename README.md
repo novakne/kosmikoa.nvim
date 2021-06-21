@@ -170,6 +170,7 @@ local colors = {
 
 # Contributing
 
+The main repo is on [sr.ht](https://git.sr.ht/~novakane/kosmikoa.nvim).
 Send patches or questions using [git send-email](https://git-send-email.io) to my [public inbox](https://lists.sr.ht/~novakane/public-inbox)  
 `~novakane/public-inbox@lists.sr.ht` with project prefix set to `kosmikoa.nvim`:
 
@@ -178,7 +179,7 @@ git config sendemail.to "~novakane/public-inbox@lists.sr.ht"
 git config format.subjectPrefix "PATCH kosmikoa.nvim"
 ```
 
-Or if you're on Github use Github interface
+Or if you're on [Github](https://github.com/novakne/kosmikoa.nvim) use Github interface
 
 # License
 
