@@ -13,8 +13,11 @@
 -   [Polyglot][] - Optional, you could look at what plugins they use for
     the languages you like though
 
+> Have a look at [kosmikoa-extras][] for config for terminal and other tools
+
 [polyglot]: https://github.com/sheerun/vim-polyglot
 [tree-sitter]: https://github.com/nvim-treesitter/nvim-treesitter
+[kosmikoa-extras]: https://git.sr.ht/~novakane/kosmikoa-extras
 
 ## Install
 
