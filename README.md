@@ -9,40 +9,44 @@
 ## Requirements
 
 -   Neovim > 0.5
+-   [Tree-sitter][] - Not obligatory but **highly recommended**
+-   [Polyglot][] - Optional, you could look at what plugins they use for
+    the languages you like though
 
--   Recommended
-    -   [Polyglot](https://github.com/sheerun/vim-polyglot)
-    -   [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
-
-> Some language looks different with Tree-sitter on or off, try both
+[polyglot]: https://github.com/sheerun/vim-polyglot
+[tree-sitter]: https://github.com/nvim-treesitter/nvim-treesitter
 
 ## Install
 
-e.g. [packer.nvim](https://github.com/wbthomason/packer.nvim)
+Use your favorite plugin manager
+
+`e.g.` [packer.nvim][]
 
 ```lua
 use {
     'https://git.sr.ht/~novakane/kosmikoa.nvim',
-    branch = 'main',
+    -- you can require it directly here
     config = function()
         require'kosmikoa'.setup()
     end,
 }
 
-
 ```
 
-e.g. [vim-plug](https://github.com/junegunn/vim-plug)
+`e.g.` [vim-plug][]
 
-`Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'`
+    Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'
+
+[packer.nvim]: https://github.com/wbthomason/packer.nvim
+[vim-plug]: https://github.com/junegunn/vim-plug
 
 ## Usage
 
-`lua require 'kosmikoa'.setup()`
+    lua require 'kosmikoa'.setup()
 
 or
 
-`colorscheme kosmikoa`
+    colorscheme kosmikoa
 
 ## Config
 
@@ -51,7 +55,6 @@ or
 If you want to change a color you can use something like this:
 
 ```lua
-
 require'kosmikoa'.setup {
     colors = {
         base00 = '#000000',
@@ -64,7 +67,6 @@ require'kosmikoa'.setup {
 Default colors:
 
 ```lua
-
 local colors = {
     base00 = '#23222b',
     base01 = '#474557',
@@ -130,57 +132,86 @@ local colors = {
 
 -   All maintained `Tree-sitter` parsers
 
-*   c/c++
-*   clojure
-*   css
-*   fennel
-*   go
-*   html5
-*   javascript
-*   json
-*   jsx
-*   less
-*   log
-*   lua
-*   markdown
-*   moonscript
-*   nim
-*   python
-*   rust
-*   scss
-*   sh
-*   toml
-*   typescript
-*   xml
-*   yaml
-*   zig
+-   c/c++
+-   clojure
+-   css
+-   fennel
+-   go
+-   html5
+-   javascript
+-   json
+-   jsx
+-   less
+-   log
+-   lua
+-   markdown
+-   moonscript
+-   nim
+-   python
+-   rust
+-   scss
+-   sh
+-   toml
+-   typescript
+-   xml
+-   yaml
+-   zig
 
 ### Plugins
 
--   [Gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
--   [Hop](https://github.com/phaazon/hop.nvim)
--   [Lspsaga](https://github.com/glepnir/lspsaga.nvim)
--   [Signify](http//github.com/mhinz/vim-signify)
--   [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+A lot of plugins should be good if they link colors to defaults _neovim_
+groups
+
+-   [Gitsigns.nvim][]
+-   [Hop][]
+-   [Lspsaga][]
+-   [Signify][]
+-   [Telescope][]
 -   Tree-sitter modules
-    -   [Nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
-    -   [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
-    -   [Treesitter-playground](https://github.com/nvim-treesitter/playground)
--   [Which-key](https://github.com/liuchengxu/vim-which-key)
+    -   [Nvim-ts-rainbow][]
+    -   [Nvim-treesitter-refactor][]
+    -   [Treesitter-playground][]
+-   [Which-key][]
+
+[gitsigns.nvim]: https://github.com/lewis6991/gitsigns.nvim
+[hop]: https://github.com/phaazon/hop.nvim
+[lspsaga]: https://github.com/glepnir/lspsaga.nvim
+[signify]: http//github.com/mhinz/vim-signify
+[telescope]: https://github.com/nvim-telescope/telescope.nvim
+[nvim-ts-rainbow]: https://github.com/p00f/nvim-ts-rainbow
+[nvim-treesitter-refactor]: https://github.com/nvim-treesitter/nvim-treesitter-refactor
+[treesitter-playground]: https://github.com/nvim-treesitter/playground
+[which-key]: https://github.com/liuchengxu/vim-which-key
 
 # Contributing
 
-The main repo is on [sr.ht](https://git.sr.ht/~novakane/kosmikoa.nvim).
-Send patches or questions using [git send-email](https://git-send-email.io) to my [public inbox](https://lists.sr.ht/~novakane/public-inbox)  
-`~novakane/public-inbox@lists.sr.ht` with project prefix set to `kosmikoa.nvim`:
+> The main repo is at [sr.ht][] use it in priority.
+
+Send patches or question using [git send-email][] to my [public inbox][]
+[~novakane/public-inbox@lists.sr.ht][] with project prefix set to
+`kosmikoa.nvim`
 
 ```
 git config sendemail.to "~novakane/public-inbox@lists.sr.ht"
 git config format.subjectPrefix "PATCH kosmikoa.nvim"
 ```
 
-Or if you're on [Github](https://github.com/novakne/kosmikoa.nvim) use Github interface
+Or if you're on [Github][] use Github interface
+
+Format the code with [LuaFormatter][]
+
+I mostly use `c`, `zig`, `lua` and `sh` so if you want to improve other
+languages feel free to send a patch or a request so I can look a it.
+
+[sr.ht]: https://git.sr.ht/~novakane/kosmikoa.nvim
+[git send-email]: https://git-send-email.io
+[public inbox]: https://lists.sr.ht/~novakane/public-inbox
+[~novakane/public-inbox@lists.sr.ht]: mailto:~novakane/public-inbox@lists.sr.ht
+[github]: https://github.com/novakne/kosmikoa.nvim
+[luaformatter]: https://github.com/Koihik/LuaFormatter
 
 # License
 
-**[MIT](LICENSE)**
+**[MIT][]**
+
+[mit]: LICENSE
