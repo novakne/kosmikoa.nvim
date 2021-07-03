@@ -5,7 +5,6 @@
 local kosmikoa = {}
 
 local colors = {
-
     base00 = '#23222b',
     base01 = '#474557',
     base02 = '#59566d',
@@ -63,7 +62,6 @@ local colors = {
     magenta02 = '#caa7e2',
 
     cyan00 = '#00cfd0',
-
 }
 
 -- [ Terminal ]
@@ -277,7 +275,7 @@ kosmikoa.set_syntax = function()
         Tag = { fg = colors.base07 },
         Delimiter = { fg = colors.base08 },
         SpecialComment = { fg = colors.base03, attr = 'italic' },
-        Todo = { fg = colors.yellow06, attr = 'underline' },
+        Todo = { fg = colors.base00, bg = colors.yellow06 },
 
         -- ------------------------------------------
         -- [ LANGUAGES SPECIFIC ]
@@ -315,6 +313,12 @@ kosmikoa.set_syntax = function()
         -- ( https://github.com/bakpakin/fennel.vim )
         FennelSpecialForm = { fg = colors.pink01 },
         FennelSymbol = { fg = colors.pink02 },
+
+        -- [Git]
+        gitcommitBlank = { fg = colors.pink00, bg = colors.pink06 },
+        gitcommitFirstLine = { fg = colors.base09, attr = 'bold' },
+        gitcommitOverflow = { fg = colors.base00, bg = colors.pink00 },
+        gitcommitSummary = { fg = colors.base09 },
 
         -- [ Go ]
         goBuiltins = { fg = colors.green00 },
@@ -394,6 +398,10 @@ kosmikoa.set_syntax = function()
         diffLine = { attr = 'bold' },
 
         -- [ Markdown ]
+        markdownBlockquote = { fg = colors.base09, attr = 'bold' },
+        markdownCode = { fg = colors.base09, attr = 'italic' },
+        markdownCodeDelimiter = { fg = colors.base09, attr = 'italic' },
+        markdownUrl = { fg = colors.base07, attr = 'underline' },
         -- ( http//github.com/plasticboy/vim-markdown )
         mkdBold = { fg = colors.base07, attr = 'bold' },
         mkdCode = { fg = colors.blue03 },
@@ -575,6 +583,12 @@ kosmikoa.set_syntax = function()
         TSVariable = { fg = colors.base07, attr = 'italic' },
         TSVariableBuiltin = { fg = colors.base07, attr = 'bold' },
 
+        commentTSConstant = { fg = colors.base00, bg = colors.blue06 },
+
+        -- Languages specific
+        zigTSField = { fg = colors.base08 },
+        zigTSVariable = { fg = colors.base09 },
+
         -- Nvim-ts-rainbow ( https://github.com/p00f/nvim-ts-rainbow )
         rainbowcol1 = { fg = colors.green00 },
         rainbowcol2 = { fg = colors.err },
@@ -599,7 +613,6 @@ kosmikoa.set_syntax = function()
         WhichKeyName = { fg = colors.base08 },
         WhichKeySeperator = { fg = colors.blue00 },
         WhichKeyTrigger = { fg = colors.magenta00 },
-
     }
 
     return syntax
