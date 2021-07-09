@@ -9,15 +9,15 @@
 ## Requirements
 
 -   Neovim > 0.5
--   [Tree-sitter][] - Not obligatory but **highly recommended**
+-   [Tree-sitter][] - Optional but **highly recommended**
 -   [Polyglot][] - Optional, you could look at what plugins they use for
     the languages you like though
 
-> Have a look at [kosmikoa-extras][] for config for terminal and other tools
+> Have a look at [kosmikoa.extras][] for config for terminal and other tools
 
 [polyglot]: https://github.com/sheerun/vim-polyglot
 [tree-sitter]: https://github.com/nvim-treesitter/nvim-treesitter
-[kosmikoa-extras]: https://git.sr.ht/~novakane/kosmikoa-extras
+[kosmikoa.extras]: https://git.sr.ht/~novakane/kosmikoa.extras
 
 ## Install
 
@@ -64,7 +64,6 @@ require'kosmikoa'.setup {
         blue03 = '#00ffff',
     }
 }
-
 ```
 
 Default colors:
@@ -126,7 +125,6 @@ local colors = {
 
     cyan00    = '#00cfd0',
 }
-
 ```
 
 ## Support
@@ -134,7 +132,6 @@ local colors = {
 ### Languages
 
 -   All maintained `Tree-sitter` parsers
-
 -   c/c++
 -   clojure
 -   css
