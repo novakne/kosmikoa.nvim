@@ -1,8 +1,8 @@
-" Theme: Kosmikoa
-" Author: Novakane
-" Repository: https://github.com/novakne/kosmikoa.nvim
+" ------------------------------------------------
+" Theme: kosmikoa
+" Author: novakane
+" Repo: https://sr.ht/~novakane/kosmikoa.nvim/
 " License: MIT
+" ------------------------------------------------
 
-
-lua require 'kosmikoa'.setup()
-
+lua require 'kosmikoa'
