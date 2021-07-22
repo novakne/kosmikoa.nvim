@@ -121,7 +121,7 @@ git config format.subjectPrefix "PATCH kosmikoa.nvim"
 
 Or if you're on [Github][] use Github interface.
 
-Format the code with [LuaFormatter][].
+Format the code with [StyLua][].
 
 I mostly use `c`, `zig`, `lua` and `sh` so if you want to improve other
 languages feel free to send a patch or a request so I can look a it.
@@ -131,7 +131,7 @@ languages feel free to send a patch or a request so I can look a it.
 [public inbox]: https://lists.sr.ht/~novakane/public-inbox
 [~novakane/public-inbox@lists.sr.ht]: mailto:~novakane/public-inbox@lists.sr.ht
 [github]: https://github.com/novakne/kosmikoa.nvim
-[luaformatter]: https://github.com/Koihik/LuaFormatter
+[StyLua]: https://github.com/JohnnyMorganz/StyLua
 
 # License
 
